@@ -1,0 +1,117 @@
+ .u-section-1 {
+  min-height: 958px;
+}
+
+.u-section-1 .u-image-1 {
+  height: 641px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 0;
+}
+
+/*여기서부터 webcam 화면*/
+.img {
+  position: relative;
+  z-index: 1;
+}
+
+.boxes {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  height: 600px;
+  margin-top : -623px;
+}
+.webcam-box {
+  width: 800px;
+  height: 600px;
+}
+
+.btn-Wrap-button {
+  font-family: 'KoPubDotumMedium';
+  font-size: 20px; 
+  border : 2px;
+  border-radius: 5px;
+  height: 40px;
+  width: 120px;
+  margin-top: 50px;
+  margin-right: 10px;
+  float: right;
+  background-color: #6a947c;
+  color: white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+.btn-Wrap-button:disabled {
+  font-family: 'KoPubDotumMedium';
+  font-size: 20px; 
+  border : 2px;
+  border-radius: 5px;
+  height: 40px;
+  width:120px;
+  margin-top: 50px;
+  margin-right: 10px;
+  float: right;
+  background-color: #d1cdba;
+  color:white;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+}
+
+
+@media (max-width: 1199px) {
+   .u-section-1 {
+    min-height: 860px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 558px;
+    margin-top: 1px;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 940px;
+  }
+
+}
+
+@media (max-width: 991px) {
+   .u-section-1 {
+    min-height: 1179px;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 720px;
+  }
+
+}
+
+@media (max-width: 767px) {
+   .u-section-1 {
+    min-height: 860px;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 540px;
+  }
+}
+
+@media (max-width: 575px) {
+   .u-section-1 {
+    min-height: 1356px;
+  }
+
+  .u-section-1 .u-image-1 {
+    height: 434px;
+    margin-left: initial;
+  }
+
+  .u-section-1 .u-list-1 {
+    width: 340px;
+  }
+
+}@font-face {
+  font-family: 'KoPubDotumMedium';
+   src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_two@1.0/KoPubDotumMedium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="INTUITIVE">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href= "{{ url_for('static', filename='home/nicepage.css') }}" media="screen">
+    <link rel="stylesheet" href= "{{ url_for('static', filename='home/Home.css') }}" media="screen">
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='home/jquery.js') }}" defer=""></script>
+    <script class="u-script" type="text/javascript" src="{{ url_for('static', filename='home/nicepage.js') }}" defer=""></script>
+    <meta name="generator" content="Nicepage 4.14.1, nicepage.com">
+    
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": "",
+		"logo": "images/default-logo.png"
+    }</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <!--header태그를 아래꺼로 바꾸면 네비게이션바 다 빠짐!-->
+    <header class="u-clearfix u-header u-header" id="sec-74f6">
+      <div class="u-clearfix u-sheet u-valign-middle u-sheet-1"></div> 
+    </header>
+    <section class="u-align-center u-clearfix u-valign-top-xl u-section-1" id="carousel_13be">
+      <img class="u-expanded-width u-image u-image-1" src="{{ url_for('static', filename='images/main-back.png') }}"></img>
+      <!--원래 배경은 6315-min.png .. 우리 프로그램 이름이 없길래 .. 그냥만들어봣슴.. . . 바꿔도 돼 . ... . -->
+      <div class="u-list u-list-1">
+        <div class="u-repeater u-repeater-1">
+          <div class="u-container-style u-custom-item u-list-item u-palette-2-light-2 u-repeater-item u-list-item-1">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-1">
+              <h6 class="u-custom-font u-text u-text-1">사용자 설정 루틴<span style="font-weight: 700;"></span>
+              </h6>
+              <h3 class="u-custom-font u-text u-text-2">User Customized<br>Routine
+              </h3>
+              <a href="select" class="u-border-1 u-border-white u-btn u-btn-rectangle u-button-style u-custom-font u-none u-text-body-alt-color u-btn-1">
+                Go!<span style="font-size: 1.125rem;"></span>
+              </a>
+            </div>
+          </div>
+          <div class="u-container-style u-custom-item u-list-item u-palette-3-light-1 u-repeater-item u-list-item-2">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-2">
+              <h6 class="u-custom-font u-text u-text-3">유튜브 영상 추천</h6>
+              <h3 class="u-custom-font u-text u-text-4">Youtube<br>Recommendation
+              </h3>
+              <div style = "top: 40px;">
+                <form method = "POST" action="/search">
+                  <input type = "text" name="keyword" placeholder = "--운동 검색--">
+                  <button type="submit" onclick="location.href='search'">Go!</button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="u-container-style u-custom-color-1 u-custom-item u-list-item u-repeater-item u-list-item-3">
+            <div class="u-container-layout u-similar-container u-valign-top u-container-layout-3">
+              <h6 class="u-custom-font u-text u-text-5">도움말</h6>
+              <h3 class="u-custom-font u-text u-text-6">Help<br>
+                <br>
+              </h3>
+              <a href="/help" class="u-border-1 u-border-white u-btn u-btn-rectangle u-button-style u-custom-font u-none u-text-body-alt-color u-btn-3">more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-cfe6"><div class="u-clearfix u-sheet u-sheet-1">
+        <p class="u-small-text u-text u-text-variant u-text-1">MAPT | My AI Personal Trainer</p>
+      </div></footer>
+  
+</body></html>
