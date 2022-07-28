@@ -15,7 +15,7 @@ def youtube_search(keyword):
     options.add_argument("headless")
 
     # path는 이용자의 브라우저 드라이버가 설치된 경로
-    path = '/Users/seoyoung/Desktop/MAPT/chromedriver'
+    path = 'MAPT/chromedriver'
 
     driver = webdriver.Chrome(path, options=options)
 
