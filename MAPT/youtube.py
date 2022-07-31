@@ -16,8 +16,13 @@ def youtube_search(keyword):
 
     # path는 이용자의 브라우저 드라이버가 설치된 경로
     path = 'MAPT/chromedriver'
-
+    
     driver = webdriver.Chrome(path, options=options)
+    
+    # 위의 코드에서 driver 오류 뜬다면 아래의 코드로 수정
+    #from selenium.webdriver.chrome.service import Service
+    #service = Service(ChromeDriverManager().install())
+    #driver = webdriver.Chrome(service=service, options=options)
 
     URL = "https://www.youtube.com/results?search_query=" + SEARCH_KEYWORD
     driver.get(URL)
