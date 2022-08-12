@@ -7,7 +7,7 @@ L = np.array([0,0,0,0,100,100,90,90,0,0])
 S = np.array([60,100,100,60,0,0,0,0,0,0])
 P = np.array([90,0,0,90,0,0,0,0,0,0,170,170])
 
-#a_idx = ['왼쪽 팔', '왼쪽 어깨', '오른쪽 어깨', '오른쪽 팔', '오른쪽 골반', '왼쪽 골반', '오른쪽 다리', '왼쪽 다리', '오른쪽 발목', '왼쪽 발목']
+#a_idx = ['왼쪽 팔', '왼쪽 어깨', '오른쪽 어깨', '오른쪽 팔', '오른쪽 골반', '왼쪽 골반', '오른쪽 다리', '왼쪽 다리', '오른쪽 발목', '왼쪽 발목', '오른쪽 몸', '왼쪽 몸']
 landmark = ['left arm', 'left shoulder', 'right shoulder', 'right arm', 'right hip', 'left hip', 'right knee', 'left knee', 'right ankle', 'left ankle','right body','left body']
 landmark_idx = [14, 12, 11, 13, 24, 23, 26, 25, 28, 27, 24, 23] #arm ~> elbow
 
@@ -17,7 +17,6 @@ S_idx = [0, 1, 2, 3]
 P_idx = [0, 3, 10, 11]
 
 #counter and set
-#_, input_count, input_set = exercise_info[now_exercise_idx]
 counter = 0
 set_num = 0
 pose_entered = False
